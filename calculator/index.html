@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="sec.css">
+</head>
+<body>
+    <h2>CALCULATOR</h2>
+    <div class="calculator">
+        <input type="text" id="display" class="display" readonly>
+        <div class="buttons">
+            
+            
+            <button onclick="appendToDisplay('7')">7</button>
+            <button onclick="appendToDisplay('8')">8</button>
+            <button onclick="appendToDisplay('9')">9</button>
+            <button onclick="display.value=display.value.toString().slice(0,-1)" id="del">DEL</button>
+            <button onclick="clearDisplay()" id="c">C</button>
+
+            <button onclick="appendToDisplay('4')">4</button>
+            <button onclick="appendToDisplay('5')">5</button>
+            <button onclick="appendToDisplay('6')">6</button>
+            <button onclick="calculatePower()">^</button>
+            <button onclick="appendToDisplay('+')">+</button>
+
+            <button onclick="appendToDisplay('1')">1</button>
+            <button onclick="appendToDisplay('2')">2</button>
+            <button onclick="appendToDisplay('3')">3</button>
+            <button id="sqrt-button" onclick="calculateSqrt()">√</button>
+            <button onclick="appendToDisplay('-')">-</button>
+
+            <button onclick="appendToDisplay('0')">0</button>
+            <button onclick="appendToDisplay('.')">.</button>
+            <button onclick="calculateLog()">log</button>
+            <button onclick="appendToDisplay('/')">/</button>
+            <button onclick="appendToDisplay('*')">*</button>
+
+            <button onclick="calculateSin()">sin</button>
+            <button onclick="calculateCos()">cos</button>
+            <button onclick="calculateTan()">tan</button>
+            <button  onclick="calculateResult()" class="equal">=</button>
+   
+        </div>
+
+        <div class="history">
+            <button onclick="showHistory()">History</button>
+            <div id="historyLog"></div>
+        </div>
+    </div>
+  
+    <script src="script.js"></script>
+</body>
+</html>

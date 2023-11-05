@@ -1,0 +1,100 @@
+body {
+    font-family: Arial, sans-serif;
+    height: 100vh;
+    background-image: url(back.avif);
+    background-repeat: no-repeat;
+    background-size: cover;
+   
+    
+}
+h2 {
+    font-size: 24px;
+    text-align: center;
+    border-radius: 5px;
+    width: 300px;
+    margin: 0 auto;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0px 0px 10px #ccc;
+    margin-bottom: 30px;
+    margin-top: 50px;
+    
+}
+
+.calculator {
+    width: 300px;
+    margin: 0 auto;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0px 0px 10px #ccc;
+}
+
+#display {
+    width: 100%;
+    height: 40px;
+    margin-bottom: 10px;
+    font-size: 20px;
+    text-align: right;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 10px;
+}
+
+button {
+    width: 100%;
+    height: 40px;
+    font-size: 18px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #555;
+}
+#equal{
+    column-span: 2;
+}
+
+.history {
+    margin-top: 20px;
+}
+.history button{
+    background-color: rgb(104, 150, 150);
+    color: black;
+}
+.history button:hover{
+    background-color: rgb(98, 183, 183);
+}
+#historyLog {
+    display: none;
+}
+
+#del{
+    background-color: rgb(85, 85, 141);
+}
+#del:hover{
+    background-color: rgb(60, 60, 188);
+}
+#c{
+    background-color: rgb(207, 65, 65);
+}
+#c:hover{
+    background-color: rgb(177, 28, 28);
+}
+.equal{
+    background-color: rgb(84, 81, 175);
+    grid-column:span 2;
+}
+.equal:hover{
+    background-color: rgb(39, 35, 158);
+}
